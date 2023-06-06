@@ -1,6 +1,6 @@
 {
   "name": "@husseyexplores/shopify-app-session-storage-firestore",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "husseyexplores",
   "description": "",
   "main": "dist/index.js",
@@ -47,6 +47,11 @@
       "require": "./dist/index.js",
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
+    },
+    "./utils": {
+      "require": "./dist/utils.js",
+      "types": "./dist/utils.d.ts",
+      "default": "./dist/utils.js"
     }
   }
 }

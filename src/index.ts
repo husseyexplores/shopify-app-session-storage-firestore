@@ -90,5 +90,3 @@ export class FirestoreSessionStorage implements SessionStorage {
     return sessionsList;
   }
 }
-
-export * from './utils'
