@@ -1,0 +1,52 @@
+{
+  "name": "@husseyexplores/shopify-app-session-storage-firestore",
+  "version": "0.1.0",
+  "author": "husseyexplores",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "tsc",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [
+    "shopify",
+    "firestore",
+    "session"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@shopify/shopify-api": "^7.3.0",
+    "@shopify/shopify-app-session-storage": "^1.1.3"
+  },
+  "devDependencies": {
+    "firebase-admin": "^11.9.0",
+    "typescript": "^5.1.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/husseyexplores/shopify-app-session-storage-firestore",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/husseyexplores/shopify-app-session-storage-firestore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/husseyexplores/shopify-app-session-storage-firestore/issues"
+  },
+  "files": [
+    "**/*.d.ts",
+    "**/*.d.ts.map",
+    "**/*.js",
+    "**/*.js.map",
+    "!node_modules"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  }
+}
